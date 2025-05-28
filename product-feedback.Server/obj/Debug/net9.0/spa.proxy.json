@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:56699",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Projects\\product-feedback\\product-feedback.Server\\..\\product-feedback.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

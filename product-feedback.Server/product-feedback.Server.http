@@ -1,0 +1,6 @@
+@product_feedback.Server_HostAddress = http://localhost:5154
+
+GET {{product_feedback.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
