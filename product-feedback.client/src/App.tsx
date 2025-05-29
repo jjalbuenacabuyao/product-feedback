@@ -1,6 +1,6 @@
-import Header from "./components/Header"
-import MainContent from "./components/MainContent";
-import NavigationRail from "./components/NavigationRail";
+import Header from "@components/Header";
+import MainContent from "@components/MainContent";
+import NavigationRail from "@components/NavigationRail";
 
 const App = () => {
   return (
