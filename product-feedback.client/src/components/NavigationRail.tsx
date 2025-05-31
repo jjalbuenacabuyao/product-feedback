@@ -32,7 +32,7 @@ const NavigationRail = () => {
     >
       <button
         type="button"
-        className="p-4 rounded-full absolute top-0 left-5 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-150 leading-0"
+        className="p-4 rounded-full absolute top-0 left-5 hover:bg-gray-3 dark:hover:bg-gray-800 transition-colors duration-150 leading-0"
         onClick={() => setExpanded(!expanded)}
       >
         <AnimatePresence mode="wait" custom={expanded ? -1 : 1}>
