@@ -1,6 +1,8 @@
-import FeedbackCard from "./FeedbackCard";
+import { useParams } from "react-router";
 
-const FeedbackList = () => {
+const Feedback = () => {
+  const { id } = useParams();
+
   const feedbacks = [
     {
       id: 0,
@@ -20,13 +22,15 @@ const FeedbackList = () => {
       upvotes: 99,
     },
   ];
+
+  const feedback = feedbacks.find((feedback) => feedback.id === Number(id));
   return (
-    <ul className="grid gap-3">
-      {feedbacks.map((feedback) => (
-        <FeedbackCard key={feedback.id} feedback={feedback} />
-      ))}
-    </ul>
+    <div>
+      <p>{feedback?.id}</p>
+      <p>{feedback?.title}</p>
+      <p>{feedback?.description}</p>
+    </div>
   );
 };
 
-export default FeedbackList;
+export default Feedback;
